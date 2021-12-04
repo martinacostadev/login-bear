@@ -1,0 +1,23 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.logo {
+  max-width: 130px;
+  display: block;
+  margin: 0 auto 30px;
+}
+
+input {
+  height: 30px;
+  margin-bottom: 8px;
+  position: relative;
+  line-height: 1.1em;
+  font-size: 1em;
+}
