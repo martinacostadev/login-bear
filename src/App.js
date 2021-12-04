@@ -24,6 +24,15 @@ export default function App() {
     }, 300);
   };
 
+  const handlePasswordBlur = () => {
+    setTimeout(() => {
+      setImage(bearPasswordImage[0]);
+    }, 300);
+    setTimeout(() => {
+      handleEmail();
+    }, 600);
+  };
+
   return (
     <div className="App">
       <h1>Login</h1>
@@ -32,13 +41,13 @@ export default function App() {
         type="text"
         placeholder="E-mail"
         onChange={handleEmail}
-        onFocus={handleEmail}
         ref={email}
       />
       <input
         type="password"
         placeholder="Password"
         onFocus={handlePasswordFocus}
+        onBlur={handlePasswordBlur}
       />
     </div>
   );
